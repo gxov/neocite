@@ -1,0 +1,194 @@
+* {
+  color: var(--font);
+  font-family: "Tahoma";
+  font-size: 1rem;
+}
+
+.wrapper {
+  border: 0.2rem solid var(--bc3);
+  border-radius: 0.1rem;
+  background-color: var(--bc3);
+  padding-top: 0;
+  position: relative;
+}
+
+body {
+  background-color: var(--bc1);
+}
+
+brl::after {
+  line-height: 0.5rem;
+  content: "||";
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0 0.2rem 0 0.2rem;
+}
+
+.banner {
+  height: 200px;
+  width: auto;
+  background-image: url("media/images/26(2).png");
+  background-position: center;
+  border: 0.1rem solid var(--mc2);
+  background-size: cover;
+}
+
+.boxWrap {
+  background-color: var(--bc1);
+  border: 0.1rem solid var(--mc2);
+  padding: 0.2rem;
+  height: fit-content;
+  margin-bottom: 0.4rem;
+}
+
+/* TOPNAV */
+
+.topNav {
+  text-align: center;
+  padding: 0.2rem 0 0.2rem 0;
+  border-top: none;
+}
+
+.topNav a {
+  margin: 0 0.6rem 0 0.6rem;
+  text-decoration: none;
+}
+
+.topNav a:hover {
+  text-shadow: 2px 2px var(--mc2);
+}
+
+/* TOPNAV END */
+
+/* MAIN CONTENT */
+
+.container {
+  margin: 0.3rem;
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+  text-shadow: 2px 2px var(--mc2);
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.4rem 0;
+  text-shadow: 2px 2px var(--mc2);
+}
+
+bl::after {
+  content: "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -";
+}
+
+.boxBanner {
+  background: linear-gradient(180deg, #53273f 0%, #e93535 100%);
+  padding: 0.3rem;
+}
+
+st {
+  margin: 0 5px;
+  align-self: center;
+  font-size: 0.7rem;
+}
+
+.size3 > .boxWrap {
+  height: revert-layer;
+}
+
+.imageSide {
+  background-image: url("media/images/bitmap.png");
+  background-position: center;
+  background-size: cover;
+  width: 24%;
+}
+
+.buttons .buttonsSlider {
+  animation: hoverLeft 6s linear infinite;
+  position: absolute;
+  width: 200%;
+}
+
+.buttons {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 30px;
+  --items: 7;
+  width: calc(94px * (var(--items)));
+}
+
+.buttons .buttonsSlider a {
+  width: 88px;
+  height: auto;
+  display: inline-block;
+  margin: 0 3px;
+  float: left;
+  transition: all 0.2s ease-out;
+}
+
+.tableUpdates{
+  overflow-y: scroll;
+  height: 80px;
+  border: 1px solid var(--mc2);
+}
+
+.tableUpdates tr{
+  background-color: var(--bc3);
+  border-top: 2px solid var(--bc2);
+  display: grid;
+  grid-template-columns: 75% 25%
+}
+
+.tableUpdates tr td{
+  padding: 4px 2px;
+  font-size: 0.9rem;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: var(--bc1);
+}
+
+.musicPlayer{
+  text-align: center;
+}
+
+.musicSlider{
+  background-color: black;
+  position: relative;
+  padding-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+.musicSlider span{
+  position: absolute;
+  animation: hoverLeft 3s linear infinite;
+
+  letter-spacing: 0.1rem;
+  display: flex;
+  width: 200%;
+  text-align: center;
+}
+
+.musicSlider span t{
+  display: flex;
+  width: 100%;
+}
+
+tm1{
+  color: var(--mc2);
+  letter-spacing: 0.1rem;
+}
+
+tm2{
+  color: var(--mc1);
+  letter-spacing: 0.1rem;
+}
+
+/* MAIN CONTENT END */
